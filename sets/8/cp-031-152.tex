@@ -1,0 +1,44 @@
+Find the power absorbed by the 1-\qw{\ohm}, 10-\qw{\ohm}, and 13-\qw{\ohm} resistors in the circuit of Fig. 1-65.
+
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bfseries\alph*)]
+\item For 1\qw{\ohm} resistor: \\[5mm]
+\begin{center}
+\textit{Simplified circuit:}\\
+\begin{circuitikz}
+\draw (0,0) 
+to[V, v=$150\qw{\V}$] (0,2)
+to[R, l^=$2\qw{\ohm}$] (2,2)
+to[R, l^=$8\qw{\ohm}$] (4,2)
+to[R, l^=$12\qw{\ohm}$] (6,2)
+to[R, l^=$3\qw{\ohm}$] (8,2)
+to[R, l=$1\qw{\ohm}$] (8,0);
+\draw (0,0) -- (2,0)
+to[R, l_=$2\qw{\ohm}$] (4,0)
+to[V, v_=$30\qw{\V}$] (8,0)
+;
+\end{circuitikz}
+\end{center}
+$
+\begin{aligned}[t]
+120\qw{\V} &= I_S(28\qw{\ohm}) \\
+I_S &= 4.286\qw{\A} \\[5mm]
+p &= i^2r \\
+&= (4.286)^2 \\
+&= \hlbox{18.37\qw{\W}}
+\end{aligned} $
+\\[1cm]
+
+\item For 10\qw{\ohm} resistor: \\[5mm]
+$
+\begin{aligned}[t]
+I_R &= I_S\left(\frac{40\qw{\ohm}}{50\qw{\ohm}}\right)\\
+&= 3.4288\qw{\A} \\
+p&= (3.4288)^2 \\
+&= \hlbox{117.566\qw{\W}}
+\end{aligned} $
+\\[1cm]
+
+\item For 10\qw{\ohm} resistor: \\[5mm]
+\hlbox{No power due to short circuit}
+\\[1cm]
+\end{enumerate}

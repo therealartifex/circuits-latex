@@ -1,0 +1,58 @@
+A practical current source provides 10\qw{\W} to a 250\qw{\ohm} load and 20\qw{\W} to an 80\qw{\ohm} load. Find the values of $R_L$, $v_L$, and $i_L$ if (\emph{a}) $v_Li_L$ is a maximum; (\emph{b}) $v_L$ is a maximum; (\emph{c}) $i_L$ is a maximum.
+
+\begin{center}
+\begin{circuitikz}
+\draw (0,0)
+to[I, i=$I_s$] (0,4) -- (4,4)
+to[R=$R_L$] (4,0) -- (0,0)
+;
+\draw (2,4) to[R=$R_P$] (2,0)
+;
+\end{circuitikz}
+\end{center}
+
+(for $R_L=250\qw{\ohm}$)
+\begin{align*}
+10\qw{\W} &= \frac{{V_L}^2}{250} & I_S &= \frac{V_L}{R_P}+\frac{V_L}{250} \\[1mm]
+V_L &= 50\qw{\V} & &=\frac{50}{R_P}+\frac{1}{5}
+\end{align*}
+
+(for $R_L=80\qw{\ohm}$)
+\begin{align*}
+20\qw{\W} &= \frac{{V_L}^2}{80} & I_S &= \frac{V_L}{R_P}+\frac{V_L}{80} \\[1mm]
+V_L &= 40\qw{\V} & &=\frac{40}{R_P}+\frac{1}{2}
+\end{align*}
+
+\begin{align*}
+\frac{50}{R_P}+\frac{1}{5} &= \frac{40}{R_P}+\frac{1}{2} & I_S &= \frac{40}{33.3333}+\frac{1}{2} \\[2mm]
+\frac{50-40}{R_P} &= \frac{1}{2}-\frac{1}{5} & I_S &= 1.7\qw{\A}\\[2mm]
+10 &= 0.3333(R_P) & I_L &= 1.7\left(\frac{33.3333}{33.3333+R_L}\right)\\[2mm]
+R_P &= 33.3333\qw{\ohm}\\[1cm]
+\end{align*}
+
+\newpage
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bfseries\alph*)]
+\item $
+\begin{aligned}[t]
+&R_L & &= \hlbox{33.3333\qw{\ohm}} \\
+&I_L = \frac{1.7}{2} & &= \hlbox{0.85\qw{\A}}\\
+&V_L = 0.85(33.3333) & &= \hlbox{28.3331\qw{\V}}
+\end{aligned} $
+\\[1cm]
+
+\item $
+\begin{aligned}[t]
+&R_L & &= \hlbox{$\infty\qw{\ohm}$} \\
+&I_L & &= \hlbox{0\qw{\A} (open circuit)}\\
+&V_L = 1.7(33.3333) & &= \hlbox{56.6661\qw{\V}}
+\end{aligned} $
+\\[1cm]
+
+\item $
+\begin{aligned}[t]
+&R_L & &= \hlbox{0\qw{\ohm} (short circuit)} \\
+&I_L & &= \hlbox{1.7\qw{\A}}\\
+&V_L & &= \hlbox{0\qw{\V}}
+\end{aligned} $
+\\[1cm]
+\end{enumerate}

@@ -1,0 +1,23 @@
+Use mesh analysis to find $i_1$ in Fig. 2-14 if \framebox{A} is: (\emph{a}) open circuit; (\emph{b}) 5\qw{\A} independent current source; (\emph{c}) 5\qw{\ohm} resistor.\\[2mm]All meshes are clockwise.
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bfseries\alph*)]
+	\item $I_1 = $ left mesh\\
+	$I_3 = $ right mesh\\[5mm]
+	$
+	\begin{aligned}[t]
+	I_1:\\
+	0 &= -80+10i_1+20(I_1-I_3)+30(I_1-I_3) \\
+	80 &= 60i_1-50i_3 \\[5mm]
+	I_3:\\
+	0 &= 20(I_3-I_1)-30+40i_3+30(I_3-I_1)\\
+	30 &= -50i_1+90i_3 
+	\end{aligned}
+	\\[5mm]
+	\begin{aligned}[t]
+	I_1 & \xrightarrow{\times 1.8} & 144 &= 108i_1-90i_3 \\
+	& & 30 &= -50i_1+90i_3 \\[-3mm]
+	\cline{3-4}
+	& & 174 &= 58i_1\\
+	& & i_1 &= \hlbox{3\qw{\A}}
+	\end{aligned} $
+	\\[1cm]	
+\end{enumerate}

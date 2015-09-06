@@ -1,0 +1,31 @@
+$I_1= $ Left mesh, clockwise.\\
+$I_2= $ Right mesh, clockwise.\\
+$I_s= $ Current entering the "black box". \\
+A 1-\si{\V} test source exists across the terminals, + reference on top.\\
+
+\begin{align*}
+\centering
+I_s &= -I_2 \\
+V_x &= 2I_2 \\
+I_1 &= 2V_x \\
+&= 4I_2
+\end{align*}
+
+\begin{align*}
+\centering
+I_2-I_1+2I_2+1 &=0 \\
+I_2-4I_2+2I_2+1&=0 \\
+I_2 &= 1\qw{\A} \\[2mm]
+R_{TH} &= \frac{1\qw{\V}}{I_s} \\
+&= -1\qw{\ohm}
+\end{align*}
+\\[5mm]
+
+\begin{center}
+\textit{Th\'evenin Equivalent:}\\[2mm]
+\begin{circuitikz}
+\draw (2,0) to[short, o-] (0,0)
+to[R=$-1\qw{\ohm}$] (0,2)
+to[short, -o] (2,2);
+\end{circuitikz}
+\end{center}

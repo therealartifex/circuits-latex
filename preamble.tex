@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr,nameref}
+\usepackage[a4paper,margin=1cm,top=1in,footskip=0.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{courier,caption}
+\usepackage{amsmath,amsfonts,fixmath}
+\usepackage{tabu,array,graphicx}
+\usepackage[nodayofweek]{datetime}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\usepackage[american,siunitx]{circuitikz}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\usepackage{tabto}
+\usepackage{gensymb}
+\pgfplotsset{compat=1.10}
+\everymath{\displaystyle}
+\setlength\extrarowheight{2pt}
+\newdateformat{datef}{\twodigit{\THEDAY}{ }\shortmonthname[\THEMONTH]{ }\THEYEAR}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[FC]{\thepage}
+\fancyhf[HL]{\slshape EEGR 2053-01}
+\fancyhf[HC]{\scshape Circuits Homework}
+\fancyhf[HR]{\slshape \leftmark}
+\newcommand{\hlbox}[1]{\colorbox{cyan!50}{#1}}
+\newcommand{\qw}[1]{\si{.#1}}
+\titleformat*{\section}{\LARGE\bfseries\ttfamily}

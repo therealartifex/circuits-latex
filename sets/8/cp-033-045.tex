@@ -1,0 +1,61 @@
+Use nodal analysis to find $v_x$ in the circuit of Fig. 2-6 if element $A$ is (\emph{a}) a 25-\qw{\ohm} resistor; (\emph{b}) a 5-\qw{\A} current source, arrow pointing right; (\emph{c}) a 10-\qw{\V} voltage source, + reference on the right; (\emph{d}) a short circuit.
+
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bfseries\alph*)]
+	\item $ N_1: \\
+	\begin{aligned}[t]
+	4\qw{\A} &= \frac{v_x}{15}+\frac{v_x}{30}+\frac{v_x-v_y}{25} \\
+	&= 0.1v_x+0.04v_x-0.04v_y \\
+	&= 0.14v_x-0.04v_y
+	\end{aligned} 
+	\\[5mm]
+	N_2: \\
+	\begin{aligned}[t]
+	-6\qw{\A} &= \frac{v_y}{20}+\frac{v_y-v_x}{25} \\
+	&= 0.05v_x+0.04v_x-0.04v_y \\
+	&= 0.09v_y-0.04v_x
+	\end{aligned} 
+	\\[5mm]
+	\begin{aligned}[t]
+	4=0.14v_x-0.04v_y &\xrightarrow{\times 2.25} & 9 &= 0.315v_x-0.09v_y \\
+	& & -6 &= -0.04v_x+0.09v_y \\[-3mm]
+	\cline{3-4}
+	& & 3&= 0.275v_x \\
+	& & v_x &= \hlbox{10.91\qw{\V}}
+	\end{aligned} $
+	\\[1cm]
+	
+	\item $
+	\begin{aligned}[t]
+	4\qw{\A} &= 5\qw{\A}+\frac{v_x}{15}+\frac{v_x}{30} \\
+	-1\qw{\A} &= \frac{v_x}{15}+\frac{v_x}{30} \\
+	-30\qw{\A} &= 2v_x+v_x \\
+	-30\qw{\A} &= 3v_x \\
+	v_x &= \hlbox{-10\qw{\V}}
+	\end{aligned} $
+	\\[1cm]
+	
+	\item $
+	\begin{aligned}[t]
+	v_y &= 10+v_x \\
+	\end{aligned} 
+	\\[5mm]
+	N_1+N_2: \\
+	\begin{aligned}[t]
+	0 &= \frac{v_x}{15}-4+\frac{v_x}{30}+6+\frac{v_y}{20} \\
+	-2\qw{\A} &= 0.05v_y+0.1v_x \\
+	-2\qw{\A} &= 0.05(10+v_x)+0.1v_x \\
+	-2\qw{\A} &= 0.5+0.15v_x \\
+	-2.5\qw{\A} &= 0.15v_x \\
+	v_x &= \hlbox{-16.667\qw{\V}}
+	\end{aligned} $
+	\\[1cm]
+	
+	\item $
+	\begin{aligned}[t]
+	v_y &= v_x \\
+	-2\qw{\A} &=\frac{v_x}{20}+\frac{v_x}{30}+\frac{v_x}{15} \\
+	-2\qw{\A} &=0.15v_x \\
+	v_x &= \hlbox{-13.333\qw{\V}}
+	\end{aligned} $
+	\\[1cm]
+\end{enumerate}

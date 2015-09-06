@@ -1,0 +1,37 @@
+$I_1= $ Left mesh, clockwise.\\
+$I_2= $ Center mesh, clockwise.\\
+$I_3= $ Right mesh, clockwise.\\
+
+\begin{align*}
+\centering
+I_1 &= 2 \\
+I_3 &= 0
+\end{align*}
+\begin{align*}
+\centering
+2(I_2-I_1)+3I_x+3(I_2-I_3) &=0 \\
+3(I_3-I_2)+3+V_{oc}&=0 \\
+I_x &= I_1-I_2
+\end{align*}
+\begin{align*}
+\centering
+2I_2 - 4 + 6 - 3I_2 + 3I_2 &=0 \\
+2I_2&=-2 \\
+I_2 &=-1
+\end{align*}
+\begin{align*}
+\centering
+3+3+V_{oc} &=0 \\
+V_{oc}&=-6\qw{\V} \\[2mm]
+I_{sc} &= 4\qw{\A}\\[2mm]
+R_{TH} &= 1.5\qw{\ohm}
+\end{align*}
+\\[1cm]
+\begin{center}
+\textit{Th\'evenin Equivalent:}\\[2mm]
+\begin{circuitikz}
+\draw (2,0) to[short, o-] (0,0)
+to[V=-6<\V>] (0,2)
+to[R=-1.5$<\ohm>$, -o] (2,2);
+\end{circuitikz}
+\end{center}

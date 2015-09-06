@@ -1,0 +1,19 @@
+\begin{align*}
+-V_{TH} + I(R) + 7.2\qw{\V} &= 0 \\
+V_{TH} &= \hlbox{7.2\qw{\V}}
+\end{align*}
+
+\begin{align*}
+40\qw{\mA}(R) - 7.2\qw{\V} &= 0 \\[1mm]
+R &= \frac{7.2\qw{\V}}{40\qw{\mA}} \\[1mm]
+ &= \hlbox{180\qw{\ohm}}
+\end{align*}
+\\[1cm]
+\begin{center}
+\textit{Th\'evenin Equivalent:}\\[2mm]
+\begin{circuitikz}
+\draw (2,0) to[short, o-] (0,0)
+to[V=7.2<\V>] (0,2)
+to[R=$180\qw{\ohm}$, -o] (2,2);
+\end{circuitikz}
+\end{center}

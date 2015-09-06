@@ -1,0 +1,24 @@
+\begin{align*}
+V_{OC} = 8\qw{\V} \\
+\end{align*}
+\begin{align*}
+-8+4I_x-6I_x&=0 \\
+-2I_x &= 8 \\
+I_x &= -4 \qw{\A} = I_{SC}
+\end{align*}
+\begin{align*}
+R_{TH} &= \frac{V_{OC}}{I_{SC}} \\
+&= \frac{8}{-4} \\
+&= -2\qw{\ohm}\\
+\end{align*}
+\begin{center}
+\emph{Th\'evenin Equivalent:} \\
+\begin{circuitikz}
+\draw (0,0)
+to[V, v=8\qw{\V}] (0,2)
+to[R=$-2\qw{\ohm}$, -o] (2,2)
+;
+\draw (0,0) to[short,-o] (2,0)
+;
+\end{circuitikz}
+\end{center}

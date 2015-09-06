@@ -1,0 +1,27 @@
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bfseries\alph*)]
+	\item Digital VOMs are more accurate, and have a higher resolution.
+	
+	\item Analog VOMs are relatively immune to electrical noise.
+	
+	\item Ideal ammeters have zero resistance (\emph{short circuit}): \\
+	\begin{center}
+		\begin{circuitikz}
+			\draw 
+			(0,0) -- (1,0)
+			(1,0) -- (1,1.5)
+			(1,1.5) -- (0,1.5);
+		\end{circuitikz}
+	\end{center}
+	
+	
+	\item Ideal voltmeters have infinite resistance (\emph{open circuit}): \\
+	\begin{center}
+		\begin{circuitikz}
+			\draw 
+			(0,0) -- (1,0)
+			(1,0) to[short,-o] (1,0.5)
+			(0,1.5) -- (1,1.5)
+			(1,1.5) to[short,-o] (1,1);
+		\end{circuitikz}
+	\end{center}
+\end{enumerate}
